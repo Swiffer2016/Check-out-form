@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="bg-light">
+    <!-- HEADER section -->
+    <section id="header">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <img src="../img/logo.png" class="img-fluid mt-5 mb-3" style="width: 70px; height: 70px" alt="">
+                    <h2>Checkout Form</h2>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda suscipit repellat incidunt quos nam facilis aperiam
+                    quisquam, eaque deleniti error a soluta at, dolor quibusdam consectetur nostrum voluptas repellendus praesentium!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHECK OUT FORM section -->
+    <section id="check-out-form" class="mt-5">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-lg-4 order-md-last">
+                    <!-- justify-content-BETWEEN to copy "me-auto" for TWO elements on a line -->
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Your cart</span>
+                        <!-- with a number inside, "rounded-pill" is better than "rounded-circle" for the padding (with badge class!)-->
+                        <span class="badge bg-warning rounded-pill">3</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm border-info">
+                            <img src="../img/iphone.png" class="me-2" width="40" height="40" alt="">
+                            <div class="me-2">
+                                <h6 class="my-0">
+                                    Iphone
+                                    <small class="text-muted">Blast past fast on the incredible iPhone 12.</small>
+                                </h6>
+                            </div>
+                            <span class="text-muted">850€</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm border-info">
+                            <img src="../img/apple-watch.jpeg" class="me-2" width="40" height="40" alt="">
+                            <div class="me-3">
+                                <h6 class="my-0">
+                                    Apple Watch Series 3
+                                    <small class="text-muted">Apple Watch Series 3 features GPS, an altimeter and a powerful processor.</small>
+                                </h6>
+                            </div>
+                            <span class="text-muted">300€</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm border-info">
+                            <img src="../img/macbookair.jpeg" class="me-2" width="40" height="40" alt="">
+                            <div class="me-3">
+                                <h6 class="my-0">
+                                    MacBook Air
+                                    <small class="text-muted">New Apple MacBook Air with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD) - Gold (Latest Model)
+                                    </small>
+                                </h6>
+                            </div>
+                            <span class="text-muted">1300€</span>
+                        </li>
+                        <li class="list-group-item lh-sm bg-light">
+                            <div class="d-flex justify-content-between">
+                                <h6 class="my-0 text-success">
+                                    Promo Code
+                                </h6>
+                                <span class="text-success">-200€</span>
+                            </div>
+                            <h6 class="text-warning fw-bold">NEWYEARDISCOUNT</h6>
+                            
+                        </li>
+                        <li class="list-group-item lh-sm mb-3">
+                            <div class="d-flex justify-content-between">
+                                <span class="my-0">
+                                    Total (€)
+                                </span>
+                                <span class="fw-bold">2250€</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Promo Code">
+                            <button type="submit" class="btn btn-warning">Redeem</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-lg-8">
+                    <h4 class="mb-3">Billing Address</h4>
+                    <form class="needs-validation mb-5" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="first-name" class="form-label">First Name</label>
+                                <input type="text" class="form-control mb-3" id="first-name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="last-name" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="last-name">
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col">
+                                <label for="first-name" class="form-label">Email</label>
+                                <input type="text" class="form-control mb-3" id="first-name" placeholder="you@example.com">
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col">
+                                <label for="first-name" class="form-label">Address</label>
+                                <input type="text" class="form-control mb-3" id="first-name" placeholder="1234 Main St">
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col">
+                                <label for="first-name" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                                <input type="text" class="form-control mb-3" id="first-name" placeholder="Apartment or suite">
+                            </div>
+                        </div>
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-5">
+                                <label for="first-name" class="form-label">Country</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Choose...</option>
+                                    <option value="1">UK</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="first-name" class="form-label">City</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Choose...</option>
+                                    <option value="1">London</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="postcode" class="form-label">Postcode</label>
+                                <input type="text" class="form-control" id="postcode">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Shipping address is the same as my billing address
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label mb-2" for="flexCheckChecked">
+                                Save this information for next time
+                            </label>
+                        </div>
+                        <hr class="mb-3">
+                        <h4 class="mb-3">Payment</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Credit Card
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Debit Card
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label mb-3" for="flexRadioDefault2">
+                                Paypal
+                            </label>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="first-name" class="form-label">Name on card</label>
+                                <input type="text" class="form-control" id="first-name">
+                                <div id="emailHelp" class="form-text mb-3">Full name as displayed on card</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="last-name" class="form-label">Credit card number</label>
+                                <input type="text" class="form-control" id="last-name">
+                                
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-md-3">
+                                <label for="first-name" class="form-label">Expiration date</label>
+                                <input type="text" class="form-control mb-2" id="first-name">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="last-name" class="form-label">CVV</label>
+                                <input type="text" class="form-control mb-2" id="last-name">
+                            </div>
+                        </div>
+                        <hr class="mb-4">
+                        <div class="row g-3">
+                            <div class="col">
+                                <input class="btn btn-block btn-primary form-control text-white fs-5" value="Continue to checkout">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER section -->
+    <footer class="pt-5 pb-3 text-center">
+        <p class="text-muted my-1">©<span id="current-year"></span> Company Name</p>
+            <ul class="list-inline text-primary">
+                <a href="#header" class="list-inline-item text-decoration-none text primary">Privacy</a>
+                <a href="#header" class="list-inline-item text-decoration-none text primary">Terms</a>
+                <a href="#header" class="list-inline-item text-decoration-none text primary">Support</a>
+            </ul>
+        
+        
+    </footer>
+
+
+    <script>
+        $('#current-year').text(new Date().getFullYear())
+    </script>
+
+
+    
+</body>
+</html>
